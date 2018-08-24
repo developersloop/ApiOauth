@@ -1,0 +1,60 @@
+Client ID: 1
+Client Secret: 8YTNTo8ZTpjHrfTArDYTItzq4Q3ZmVJONn0lLZWZ
+
+
+Password grant client created successfully.
+
+
+Client ID: 2
+Client Secret: 56J4dXB8HTnHBaphdRL163lpN3mW9liKJpXAQAFD
+
+
+// clientes via Password
+Client ID: 3
+Client Secret: 
+
+//////////////////////////////////////////////////
+// enviando informações de login para acessar a settings_applications
+{
+
+   "grant_type": "password", // se a validação for por password
+   "client_id":"3",
+   "client_secret":"smtxk5BYhv49DAJZIHkKyiSTnQD00Q7N2Ei1xuk3",
+   "username":"vitor@vitor.com",
+   "password":"dualcore"
+}
+
+// nessa requisição vai ser gerada o accesTOken e o refresh_token
+ "token_type": "Bearer",
+    "expires_in": 31536000,
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU5YzE3MDA3MmE5YjJmNWYzNTdkYTA1MDg3NmZmNDRiNzYwNjcxYTM2OWM3ZGQ4MjllYmZlZGY3Yjk4YTdlNzBkYzQxODU0NjEyOTZiYTYyIn0.eyJhdWQiOiIzIiwianRpIjoiNTljMTcwMDcyYTliMmY1ZjM1N2RhMDUwODc2ZmY0NGI3NjA2NzFhMzY5YzdkZDgyOWViZmVkZjdiOThhN2U3MGRjNDE4NTQ2MTI5NmJhNjIiLCJpYXQiOjE1MzUxMjg0MDEsIm5iZiI6MTUzNTEyODQwMSwiZXhwIjoxNTY2NjY0NDAxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.NJU2UOphKFCIds1jVhqG4WZDeQuZ7LyYuCxVxLHiu5Ciml49m-uUzy-SuH2YgGSKIZOGCH9719jHgY-ijTEdvY37oNklP4P33Pej05bXkkl0EUldlpiBHO2PUp0e_lqcJ5bneKFgDlARqKH-PxHeaOXlXYhuZrvX8dLeV3zp-GnNLOkqzIFKqE6RclBsPuWrb3f32fS9TQK_7dMs4VdmJESP8RRFntTFSb0zCJ3_tFqL0Yg2tvWRraBAUjw7RdeDBKMkUtlAwHbdeexGEfHAm3aYaoljziXq_cn18qspc76uH0Iq3ZxbsIbsa_lBAZVZfjAMqf3Z3akYn-CSqRI7tD1jvRxuazEJm5wz_cJ6Y-LJAGkdSubxZhQpRs22W0rbP6QYFI_d6xVIbWOIGF6sKURxfKCVXoXcE9J-zcJdInRs36Q_hrIL1NyWbXVkzH9VNHLu3Tp6g-Zb3at_BrEsktWN1a7Z0lgA52f-l58VeWO0oQWAt-vSPXfGyW-X_3rCSwWaBQ4N9HKKsrCVaTpcr5o3x76Bdzt76hU8Ey9ja4lHKZeMVnv9miRt1s7YjkXwdZv7FU5icxRUBWPXRoja3h4lF0RxRnH7g70wdNHNm_KoKnoub4a4a2B_sdxFWSJHH9M7jlbO-Q0cCN6eSDLuUYR_EArHbliZ69OzVt4SP00",
+    "refresh_token": "def50200e7730c7bb997ba8f42b32dc38d825ca09052d5f4e7805816948e4e1b7dd59d9210af94f22194446022e88593fb3e79da8063ce6ac9d7b2d05ff4db199002e67b3365c3a7690298e85d0f79e75eb518f2eb3d73518f89ea0e30a7073b768af197aff6978fb05327f7114a413997fd01811a2c0d3fe8b867d5153903375d3e2408d0477966ce1838077377ad3141f6f9f3d002778186d2399a550292b627a738bb6c7d52dc6be60e092919a2fd858ba9a7805c25c89f7c69ea043c106c9495a108731d6a2f44a80f4e8d20d618e1768ea9f3e1164e0c968c9c7fa6246e89c216011da0ca500a1c05b20ee0d12abfab92dfa5192291cc65234ffa48c407f7e268aa16598a1292c3271551f340313f485e9666dc551876df9a45e6a270af31a04bd3f11e7e7c96244bc8e102c7cd764b20224a72b1c1c8654d5562069c3125e053b285184056ed836c4ec1456f833633c4a24772311c88e651c19d6a17ea86"
+//////////////////////////////////////////////////////
+
+// renovando o token pq ele expira em segundos
+
+{
+
+   "grant_type": "refresh_token",
+   "client_id":"3",
+   "client_secret":"smtxk5BYhv49DAJZIHkKyiSTnQD00Q7N2Ei1xuk3",
+    "refresh_token":"def502009c8199c8ccc3ec8a3f78e785e5d6a47ff0c7cca3c12b541832b1a606c77cd8e98d599cdc429760d5fc8ae4ff2ad4c287ba226d672bc26333b56c22f597a60f1639bb48a95bc4c78f2e027ad376a6b94c16ac3718150c507cea44cdc7925c7928fc3895907e5a6898c6ece2204f96acf0c1d27357812d09ec202430496ae9565927b3dd3ca0c434f2c09e691496afa772d628441445f38f3434393b646aac1bb983b8c8a6f3387cb0838b23df592cd8c2ef899df46a64c9dc00c3a1756046a387c0beef197cba10a06067afd50009b1c4f0d2139441ec34a2ff68349b7c8d4927d0e20d6f610408c2186b9941b23373ae7b272141a99c6af9f1a7b2046543151c7d37af18c461b1eda6d2c68792df786b7b6dd820f0f84af9cab08ffa7fc64494b746d00a9f2ec120ff7a1bd5f31b2127db17d60fab35cf7d9da00ca1ea71611dfe1487b986606542eaadf8e07e1e642f22c734c10b4d431a10cf985d94"
+}
+
+
+
+
+---------------------------------
+
+{
+
+   "grant_type": "refresh_token",
+   "client_id":"3",
+   "client_secret":"smtxk5BYhv49DAJZIHkKyiSTnQD00Q7N2Ei1xuk3",
+   "username":"vini@vini.com",
+   "password":"dualcore",
+   "scope":"administrador"
+}
+
+enviando requisição com o administrador
+
